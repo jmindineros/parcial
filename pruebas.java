@@ -16,7 +16,7 @@ public class pruebas {
         n2 = sc.nextDouble();
         max = (n1 + n2)/2;
 
-        while (n1 != 999 || n2 != 999)
+        while (n1 != 999 && n2 != 999){
 
         System.out.println("escriba el primer numero");
         n1 = sc.nextDouble();
@@ -26,6 +26,7 @@ public class pruebas {
         if (m>max){
             max = m;
         }
+    }
         System.out.println("la media maxima" + max);
 
     }
