@@ -5,29 +5,21 @@ public class pruebas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        Double m;
-        Double max;
-        Double n1;
-        Double n2;
+        int sw;
+        Double n;
 
-        System.out.println("escriba el primer numero");
-        n1 = sc.nextDouble();
-        System.out.println("escriba el segundo numero");
-        n2 = sc.nextDouble();
-        max = (n1 + n2)/2;
-
-        while (n1 != 999 && n2 != 999){
-
-        System.out.println("escriba el primer numero");
-        n1 = sc.nextDouble();
-        System.out.println("escriba el segundo numero");
-        n2 = sc.nextDouble();
-        m = (n1 + n2)/2;
-        if (m>max){
-            max = m;
+        sw = 0;
+        while (sw == 0) {
+            System.out.println("ingrese n");
+            n = sc.nextDouble();
+            if (n != (int) n) {
+                System.out.println("no es valido");
+                System.out.println("ejecuta nuevamente");
+                sw = 1;
+            } else {
+                System.out.println("correcto " + n + " es entero");
+            }
         }
-    }
-        System.out.println("la media maxima" + max);
 
     }
 }
