@@ -25,6 +25,7 @@ public class pruebas {
             pruni = sc.nextDouble();
             System.out.println("ingresa el numero del articulo");
             numart = sc.nextDouble();
+            sc.nextLine();
             if (art.equals("A")) {
                 artA += numart;
                 totalA += (numart * pruni);
@@ -34,7 +35,7 @@ public class pruebas {
             } 
 
         }
-        System.out.println("el total de articulo a es " + artA + "y su total dee importe es" + totalA);
-        System.out.println("el total de articulo a es " + artB + "y su total de importe es" + totalB);
+        System.out.println("el total de articulo a es: " + artA + " y su total dee importe es: " + totalA);
+        System.out.println("el total de articulo a es: " + artB + " y su total de importe es: " + totalB);
     }
 }
